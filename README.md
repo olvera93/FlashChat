@@ -2,54 +2,28 @@
 
 # Flash-Chat
 
-## Our Goal
+## Nuestro objetivo
 
-One of the most fundamental component of modern iOS apps is the Table View. Table Views are used everywhere from the Mail app to the Messages app. It’s a crucial part of every iOS developer’s tool belt. In this tutorial we’ll be getting to grips with Table Views, creating custom cells, and making our own cloud-based backend database. It’s going to be epic, so buckle up.
+Uno de los componentes más fundamentales de las aplicaciones modernas de iOS es la vista de tabla. Las vistas de tabla se utilizan en todas partes, desde la aplicación Mail hasta la aplicación Mensajes. Es una parte crucial del cinturón de herramientas de todos los desarrolladores de iOS. Nos familiarizaremos con las vistas de tabla, se creara celdas personalizadas y creara nuestra propia base de datos backend basada en la nube. 
 
-## What you will create
+## Lo que va a crear
 
-Flash Chat is an internet based messaging app similar to WhatsApp, the popular messaging app that was bought by Facebook for $22 billion. We will be using a service called Firebase Firestore as a backend database to store and retrieve our messages from the cloud. 
+Flash Chat es una aplicación de mensajería basada en Internet similar a WhatsApp, la popular aplicación de mensajería que Facebook compró por 22 000 millones de dólares. Utilizaremos un servicio llamado Firebase Firestore como base de datos backend para almacenar y recuperar nuestros mensajes de la nube.
 
-## What you will learn
+## Lo que aprenderás
 
-* How to integrate third party libraries in your app using Cocoapods and Swift Package Manager.
-* How to store data in the cloud using Firebase Firestore.
-* How to query and sort the Firebase database.
-* How to use Firebase for user authentication, registration and login.
-* How to work with UITableViews and how to set their data sources and delegates.
-* How to create custom views using .xib files to modify native design components.
-* How to embed View Controllers in a Navigation Controller and understand the navigation stack.
-* How to create a constants file and use static properties to store Strings and other constants.
-* Learn about Swift loops and create animations using loops.
-* Learn about the App Lifecycle and how to use viewWillAppear or viewWillDisappear.
-* How to create direct Segues for navigation.
+* Cómo integrar bibliotecas de terceros en su aplicación usando Cocoapods y Swift Package Manager.
+* Cómo almacenar datos en la nube usando Firebase Firestore.
+* Cómo consultar y ordenar la base de datos de Firebase.
+* Cómo usar Firebase para la autenticación, el registro y el inicio de sesión de los usuarios.
+* Cómo trabajar con UITableViews y cómo establecer sus fuentes de datos y delegados.
+* Cómo crear vistas personalizadas usando archivos .xib para modificar componentes de diseño nativos.
+* Cómo incrustar controladores de vista en un controlador de navegación y entender la pila de navegación.
+* Cómo crear un archivo de constantes y usar propiedades estáticas para almacenar Strings y otras constantes.
+* Obtener información sobre los bucles Swift y cree animaciones usando bucles.
+* Obtener información sobre el ciclo de vida de la aplicación y cómo usar viewWillAppear o viewWillDisappear.
+* Cómo crear Segues directos para la navegación.
 
-
-# Constants
-```
-struct K {
-    static let cellIdentifier = "ReusableCell"
-    static let cellNibName = "MessageCell"
-    static let registerSegue = "RegisterToChat"
-    static let loginSegue = "LoginToChat"
-    
-    struct BrandColors {
-        static let purple = "BrandPurple"
-        static let lightPurple = "BrandLightPurple"
-        static let blue = "BrandBlue"
-        static let lighBlue = "BrandLightBlue"
-    }
-    
-    struct FStore {
-        static let collectionName = "messages"
-        static let senderField = "sender"
-        static let bodyField = "body"
-        static let dateField = "date"
-    }
-}
-
-```
-
->This is a companion project to The App Brewery's Complete App Developement Bootcamp, check out the full course at [www.appbrewery.co](https://www.appbrewery.co/)
+>Este es un proyecto complementario al Complete App Developement Bootcamp de The App Brewery
 
 ![End Banner](Documentation/readme-end-banner.png)
